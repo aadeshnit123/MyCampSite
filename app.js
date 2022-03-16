@@ -51,7 +51,7 @@ db.once("open", () => {
 
 app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
+app.set("views",  "views");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
